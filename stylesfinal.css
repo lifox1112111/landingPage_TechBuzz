@@ -1,0 +1,180 @@
+/* styles.css */
+
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  background-color: #554e4e;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero section styles */
+.hero {
+  background-image: url('image6.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #93926e;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+
+}
+
+
+.h1::before{
+  max-width: 180px;
+  margin: 0 auto;
+  font-size: 36px;
+  
+  content: attr(data-text);
+  position: absolute;
+  top: 185.5px;
+  left: auto;
+  width: 0;
+  height: 6%;
+  color: #01fe87;
+  
+  border-right: 2px solid #01fe87;
+  overflow:hidden;
+  animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+  0%,10%,100%{
+      width:0;
+  }
+  70%,90%{
+      width:100%
+  }
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* Blogs section styles */
+.blogs {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.segment {
+  flex-basis: 30%;
+}
+
+.segment h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.segment ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.segment ul li {
+  margin-bottom: 5px;
+}
+
+.segment ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* News Feeds section styles */
+.news-feeds {
+  background-color: #f9f9f9;
+  padding: 40px;
+}
+
+.news-feeds h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Updates on Upcoming Events section styles */
+.event-updates {
+  padding: 40px;
+}
+
+.event-updates h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+
+
+/* Jobs section styles */
+.jobs {
+  background-color: #f9f9f9;
+  padding: 40px;
+}
+
+.jobs h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
